@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main(){
+    double first, second;
+    char operation;
+    cout<<"Please enter a number"<<endl;
+    cin>>first;
+    cout<<"Please enter your operator(+,-,*,/,%)"<<endl;
+    cin>>operation;
+    cout<<"PLease enter second number"<<endl;
+    cin>>second;
+    switch(operation){
+        case '+':
+        cout<<first<<operation<<second<<"="<<first+second<<endl;
+        break;
+        case '-':
+        cout<<first<<operation<<second<<"="<<first-second<<endl;
+        break;
+        case '*':
+        cout<<first<<operation<<second<<"="<<first*second<<endl;
+        break;
+        case '/':
+        cout<<first<<operation<<second<<"="<<first/second<<endl;
+        break;
+        case '%':
+        cout<<first<<operation<<second<<"="<<first+second<<endl;
+        break;
+        default:
+        cout<<"Please enter a valid operator";
+    }
+}
